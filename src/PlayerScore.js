@@ -1,7 +1,6 @@
 
 import React from "react";
 
-
 const PlayerScore = (props) =>{
     return(
    <div className="ScoreWrapper">
@@ -19,9 +18,7 @@ const PlayerScore = (props) =>{
                 </tr>
                </tbody>
             </table>
-           
-              
-              
+                      
                    <div>{scores.sort((a, b) =>
                     b.s -a.s).map((score,index)=>{
                        const { n, s } = score;
