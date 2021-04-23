@@ -4,32 +4,35 @@ import React from "react";
 
 const PlayerScore = (props) =>{
     return(
-   <div >
+   <div className="ScoreWrapper">
   
-     {props.Score.sort((a, b) => a.name.localeCompare(b.name)).map(item =>{
+     {props.Score.sort((a, b) => a.name.localeCompare(b.name)).map((item,index) =>{
          const {name,scores} = item;
          return(
-            <div>
-            <table>
-                <th></th>
-                <tr>
-                  <td>Hight Score: </td> 
-                  <td><h3>{name}</h3></td> 
+            <div key={index} className="ScoreTable">
+            <table className="countryRow">
+              <thead></thead> 
+               <tbody> 
+                <tr className="country">
+                  <td className="country">Hight Score: </td> 
+                  <td><h3 className="country">{name}</h3></td> 
                 </tr>
-
+               </tbody>
             </table>
            
               
               
-                   <div>{scores.map(score=>{
+                   <div>{scores.sort((a, b) =>
+                    b.s -a.s).map((score,index)=>{
                        const { n, s } = score;
                     return(
-                    <table>
-                    <th></th>
-
-                        <td>{n}</td>
-                        <td>{s}</td> 
-                    </table>
+                    <div  key ={index} className="scoreAndName">
+                   
+                     
+                        <div className="personName">{n}</div>
+                        <div className="personScore">{s}</div> 
+                       
+                    </div>
                    
                     ); 
 

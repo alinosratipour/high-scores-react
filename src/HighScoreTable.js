@@ -4,7 +4,7 @@ import PlayerScore from "./PlayerScore";
 
 const HighScoreTable = () =>{
     return(
-   <div>
+   <div  >
    <h1>Hight Score per Countries</h1>
        <PlayerScore Score={Score}/>
    </div>

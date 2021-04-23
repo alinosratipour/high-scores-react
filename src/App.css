@@ -1,38 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ScoreTable{
+  border: 5px solid greenyellow;
+  width: 50%;
+margin:0 auto;
+padding: 20px;
+margin-bottom: 10px;
+}
+.country{
+ color: skyblue;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.countryRow{
+  width: 100%;
+  padding-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.personName{
+  font-size: 1.3rem;
+  flex: 1;
+  font-weight: bold;
+}
+.personScore{
+font-size: 1.3rem;
+font-weight: bold;
+color: rgb(126, 29, 29);
+  flex: 1;
+}
+
+.scoreAndName{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
