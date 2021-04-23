@@ -1,12 +1,12 @@
 import React from "react";
-import allCountryScores from "./Score.js";
+import Score from "./Score";
 import PlayerScore from "./PlayerScore";
 
 const HighScoreTable = () =>{
     return(
    <div>
    <h1>Hight Score per Countries</h1>
-       <PlayerScore Score={allCountryScores}/>
+       <PlayerScore Score={Score}/>
    </div>
 
 
