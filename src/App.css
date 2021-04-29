@@ -40,3 +40,20 @@ color: rgb(126, 29, 29);
   display: flex;
 
 }
+
+.btn_toggle{
+  background-color: green;
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s ease-in;
+}
+.btn_toggle:hover{
+  
+  background-color: rgb(103, 145, 37);
+}
