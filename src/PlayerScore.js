@@ -67,7 +67,6 @@ const PlayerScore = (props) =>{
                    }
                    </div>
                   
-            
             </div>
          );
      })}
