@@ -32,15 +32,16 @@ const WorldWideTable = ({AllScores}) => {
                 <tbody>
                     {sortNewArray.map(({ Country, playerScore, playerName }, index) => {
                         return (
-                            <tr className="te" key={index}>
+                            
+                            <tr key={index} className="te" >
                                 <th scope="row">{index + 1}</th>
                                 <td>{Country}</td>
                                 <td>{playerName}</td>
-                                 <td>{playerScore <= 5000 ?  <ImSad style={{ color:"red" }} /> : <ImSmile style={{ color:"green" }}/> }
-                              {playerScore}</td>
+                                <td>{playerScore <= 5000 ?  <ImSad style={{ color:"red" }} /> : <ImSmile style={{ color:"green" }}/> }
+                                {playerScore}</td>
                             </tr>
                         );
-                    })};
+                    })}
                 </tbody>
             </table>
            
