@@ -33,7 +33,7 @@ const WorldWideTable = ({AllScores}) => {
                     {sortNewArray.map(({ Country, playerScore, playerName }, index) => {
                         return (
                             
-                            <tr key={index} className="te" >
+                            <tr key={index} className="tableRow" >
                                 <th scope="row">{index + 1}</th>
                                 <td>{Country}</td>
                                 <td>{playerName}</td>
